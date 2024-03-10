@@ -1,0 +1,18 @@
+
+#main{
+    background-color: color-mix(in srgb, #5407e1,red);
+    border: 2px solid black;
+    padding: 12px;
+}
+.address label{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+.head label{
+    margin-right: 50px;
+}
+
+.mid label{
+    margin-right: 50px;
+}
