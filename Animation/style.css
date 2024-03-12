@@ -1,0 +1,114 @@
+body{
+    background-color: #eceffe;
+}
+
+.center{
+    height: 250px;
+    width: 250px;
+    background-color: #42a542;
+    box-shadow: 0px 0px 50px 3px #000;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+span{
+    left: 10%;
+    top: 10%;
+    box-shadow: 0px 0px 25px #000;
+}
+
+span:nth-child(1){
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    background-color: #90ca;
+    left: 6%;
+    top: 6%;
+    animation: ani 3s infinite;
+    animation-delay: 0.3s;
+}
+span:nth-child(2){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 10%;
+    left: 10%;
+    background-color: #232323;
+    animation: ani 3s infinite;
+    animation-delay: 0.4s;
+}
+span:nth-child(3){
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    left: 14%;
+    top: 14%;
+    background-color: #4f4f;
+    animation: ani 3s infinite;
+    animation-delay: 0.5s;
+}
+span:nth-child(4){
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    left: 18%;
+    top: 18%;
+    background-color:red;
+    animation: ani 3s infinite;
+    animation-delay: 0.6s;
+}
+span:nth-child(5){
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    left: 22%;
+    top: 22%;
+    background-color:blue;
+    animation: ani 3s infinite;
+    animation-delay: 0.7s;
+}
+span:nth-child(6){
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: 26%;
+    top: 26%;
+    background-color:ghostwhite;
+    animation: ani 3s infinite;
+    animation-delay: 0.8s;
+}
+span:nth-child(7){
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 30%;
+    top: 30%;
+    background-color:grey;
+    animation: ani 3s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes ani {
+    0%{
+        transition: 0.7s;
+        transform: rotate(0deg);
+    }
+    20%{
+        transition: 0.7s;
+        transform: rotate(95deg);
+    }
+    50%{
+        transition: 0.7s;
+        transform: rotate(360deg);
+    }
+    100%{
+        transition: 0.7s;
+        transform: rotate(0deg);
+    }
+    
+}
+
