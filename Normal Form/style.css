@@ -1,6 +1,6 @@
 
 #main{
-    background-color: color-mix(in srgb, #5407e1,red);
+    background-color: color-mix(in srgb, #7b43e1,rgb(232, 145, 145));
     border: 2px solid black;
     padding: 12px;
 }
@@ -15,4 +15,10 @@
 
 .mid label{
     margin-right: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }

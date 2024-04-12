@@ -1,130 +1,207 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
+
 
 #main {
-    display: flex;
-    background-color: red;
-    height: 100%;
     width: 100%;
+    min-height: 100vh;
 }
 
-#left {
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
     position: relative;
-    width: 40%;
-    height: 100%;
-    background-color: greenyellow;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.149);
 }
 
-#lnav {
+.text {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 20px 30px;
-}
-
-#lnavr {
-    display: flex;
     align-items: center;
-}
-
-#lnavr a {
-    color: black;
-    font-weight: 500;
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-#lnavr i{
-    color: blue;
-}
-
-#left #textcenter{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
 }
 
-#textcenter h1{
-    font-size: 90px;
-    font-weight: 900;
-}
-
-#textcenter p{
-    opacity: .6;
-    font-size: 12px;
-    line-height: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#textcenter a{
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
+.text h1 {
     font-weight: 600;
-    opacity: .6;
-    border-bottom: 1px solid black;
-    padding-bottom: 3px;
-}
-#right {
-    width: 60%;
-    height: 100%;
-    background-color: blueviolet;
+    font-size: 4vw;
 }
 
-#rtop {
+.text .image {
+    background-image: url(https://th.bing.com/th/id/R.13820971a962ffbeb63a8fef36185b16?rik=vZ3lu%2blbhy6jxw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f03%2f10%2f319576-photography-landscape-nature-water-grass-trees-plants-sunrise-lake.jpg&ehk=6WS2p9KknQa9F%2bgAH16n44NReuUyS2rzXah2zy7kiAw%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p {
+    font-size: 12px;
+}
+
+.bottom {
     display: flex;
     width: 100%;
-    height: 50%;
-    background-color: royalblue;
+    min-height: 40vh;
 }
 
-#rbottom {
+.b1 {
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/03/Outer-Space-Galaxy-Background.jpg);
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b1 p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: inherit;
+}
+
+.b2 .up {
     width: 100%;
-    height: 50%;
-    background-image: url(https://images.unsplash.com/photo-1707305313174-6bd1374ce76a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8);
-    background-image: cover;
-    background-position: center;
+    min-height: 20vh;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6d668deb-92c7-4fad-8a1d-1fcc242332fb/dgi8iax-744839d7-832a-4b41-bb49-9c514aba20c8.jpg/v1/fill/w_894,h_894,q_70,strp/the_aftermath__by_prehistoricpark96_dgi8iax-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzZkNjY4ZGViLTkyYzctNGZhZC04YTFkLTFmY2MyNDIzMzJmYlwvZGdpOGlheC03NDQ4MzlkNy04MzJhLTRiNDEtYmI0OS05YzUxNGFiYTIwYzguanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-Fag7KYc7kGBkHWaQHiiaXCqKiU_OFzODwWiqJvBFcY);
+    background-size: cover;
+    background-position: top;
 }
 
-#rtopleft {
-    width: 55%;
-    height: 100%;
-    background-image: url(https://images.unsplash.com/photo-1707343848655-a196bfe88861?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+.b2 .up h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b2 .up p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.hdqwalls.com/wallpapers/batman-key-artwork-4k-4v.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(19, 136, 186, 0.29);
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2018/11/goku-4k-dragon-ball-super_1541974163.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#rtopright {
-    background-image: url(https://images.unsplash.com/photo-1709223328831-18ba521f44a9?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
-    width: 45%;
+.b3 .overlay {
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
     height: 100%;
-    background-color: rgb(3, 173, 116);
+    padding: 4vw 3vh;
 }
 
-@media(max-width: 500px){
-    #main{
+.b3 .overlay p {
+    padding: 1.2vh;
+}
+
+@media(max-width:700px){
+    .rtext{
         flex-direction: column;
     }
-
-    #main #left{
+    .b3 .overlay{
+        width: 200%;
+        margin-left: initial;
+    }
+}
+@media (max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p {
+        margin: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        min-height: 30vh;
         width: 100%;
     }
-
-    #main #right{
+    .b2{
         width: 100%;
+    }
+    .b2 up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
     }
 }

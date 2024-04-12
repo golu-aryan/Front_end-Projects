@@ -94,7 +94,7 @@ span:nth-child(7){
 
 @keyframes ani {
     0%{
-        transition: 0.7s;
+        transition: 0.6s;
         transform: rotate(0deg);
     }
     20%{
@@ -102,8 +102,12 @@ span:nth-child(7){
         transform: rotate(95deg);
     }
     50%{
-        transition: 0.7s;
+        transition: 0.8s;
         transform: rotate(360deg);
+    }
+    70%{
+        transition: 1s;
+        transform: rotate(450deg);
     }
     100%{
         transition: 0.7s;
