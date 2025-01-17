@@ -1,0 +1,27 @@
+*,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.workout_routine {
+    padding: 75px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(209, 203, 203);
+}
+
+.mainPage_container {
+    display: flex;
+    justify-content: centerr;
+}
+
+.routine_img_left > img {
+    height: 173.3vh;
+    width: 50vw;
+}
+
+
+
